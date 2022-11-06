@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
-function AboutusFun() {
-    return (
-     <div>
-        About Here
+function AboutusPage(){
+    return(
         <div>
-            <Link to="/">Home</Link>
+            <div style={{textAlign: 'right'}}>
+                <Link to='/'>Home</Link>
+            </div>
+            <div className='HeaderStyle'>About us</div>
         </div>
-     </div>
     );
 }
 
-export default AboutusFun;
+export default AboutusPage;

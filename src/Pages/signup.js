@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
-function SignUPFun() {
-    return (
-     <div>
-        SignIn Here
+function SignupPage(){
+    return(
         <div>
-            <Link to="/">Home</Link>
+            <div style={{textAlign: 'right'}}>
+                <Link to='/'>Home</Link>
+            </div>
+            <div className='HeaderStyle'>Signup</div>
         </div>
-     </div>
     );
 }
 
-export default SignUPFun;
+export default SignupPage;

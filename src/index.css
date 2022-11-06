@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Landingbutton{
+  background-color: #a88383;
+  padding: 10px;
+  text-align: center;
+}
+
+.LinkStyle{
+  text-decoration: none;
+  color: #000;
+  font-weight: Bold;
+}
+
+.HeaderStyle{
+  width: 100%;
+  font-weight: Bold;
+  color: #000;
+  text-align: center;
+  font-size: 50px;
+}

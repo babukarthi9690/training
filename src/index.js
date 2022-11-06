@@ -2,22 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
-// import {Appkl, Appk2} from './App';
-import LoginFun from './Pages/Login';
-import SignUPFun from './Pages/signup';
-import AboutusFun from './Pages/aboutus';
+import LandingPage from './Pages/landing';
+import LoginPage from './Pages/Login';
+import SignupPage from './Pages/signup';
+import AboutusPage from './Pages/aboutus';
+
 import reportWebVitals from './reportWebVitals';
 
-export default function Training() {
-  return (
+export default function Training(){
+  return(
     <BrowserRouter>
       <Routes>
-        <Route path="/aboutus" element={<AboutusFun />} /> 
-        <Route path="/signup" element={<SignUPFun />} /> 
-        <Route path="/" element={<LoginFun />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/Login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/aboutus" element={<AboutusPage />} />
       </Routes>
     </BrowserRouter>
-    // <div>Hi</div>
   );
 }
 
