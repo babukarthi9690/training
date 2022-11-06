@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
-import App from './App';
+// import {Appkl, Appk2} from './App';
+import LoginFun from './Pages/Login';
+import SignUPFun from './Pages/signup';
+import AboutusFun from './Pages/aboutus';
 import reportWebVitals from './reportWebVitals';
+
+export default function Training() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/aboutus" element={<AboutusFun />} /> 
+        <Route path="/signup" element={<SignUPFun />} /> 
+        <Route path="/" element={<LoginFun />} />
+      </Routes>
+    </BrowserRouter>
+    // <div>Hi</div>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Training />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
